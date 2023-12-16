@@ -1,0 +1,26 @@
+{
+  "name": "Simple Calculator",
+  "short_name": "Calculator",
+  "display": "standalone",
+  "version": "1.0",
+  "version_name": "1.0 realease",
+  "categories": ["productivity", "utilities"],
+  "description": "A simple and modern calculator PWA web app.",
+  "start_url": "/calc/app/index.html",
+  "theme_color": "#004A77",
+  "background_color": "#000",
+  "scope": "/calc/",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
