@@ -1,91 +1,85 @@
-    * {
-      font-family: 'Open Sans', sans-serif;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+body {
+  margin: 0px
+}
+.android-large {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  background: linear-gradient(180deg, rgb(229, 190, 16) 0%, #e51024 100%);
+  align-content: flex-start;
+}
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      height: 100dvh;
-      background-color: #000000;
-    }
+.android-large .rectangle {
+  height: 59px;
+  background-color: #00000080;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    body {
-      background-color: #000000;
-    }
+.android-large .frame {
+  display: inline-flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  gap: 9px;
+  position: relative;
+  flex: 0 0 auto;
+  overflow-y: scroll;
+  height: 100dvh;
+}
 
-    @media only screen and (min-width: 700px) {
-      .container {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 50vh;
-        background-color: #121212;
-      }
-    }
+.android-large .div {
+  /* position: relative; */
+  width: 100vw;
 
-    .display {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      font-size: 4rem;
-      padding: 0.5rem;
-      color: white;
-      overflow-x: auto;
-      /* white-space: nowrap; */
-      display: inline-block;
-      line-height: 30dvh;
-      text-align: right;
-    }
+  height: 80px;
+  background-color: #00000080;
+  border-radius: 30px;
+}
 
-    .buttons {
-      flex: 2;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      gap: 0.5rem;
-      padding: 0.5rem;
-    }
+@media (min-width: 650px) {
+  .android-large .div {
+    max-width: 360px;
+    min-width: 30vw;
+  }
+}
 
-    .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-      border-radius: 1.5rem;
-      color: white;
-      background-color: #004A77;
-      -webkit-user-select: none;
-      /* Safari */
-      user-select: none;
-      /* Standard syntax */
-    }
+.android-large .img {
+  height: 80px;
+  position: relative;
+  width: 360px;
+  margin: 1em;
+}
 
-    .button:hover {
-      filter: brightness(0.9);
-    }
+.android-large .ellipse {
+  /*position: absolute;*/
+  width: 2.8rem;
+  height: 2.8rem;
+  top: 7px;
+  left: 308px;
+  margin: 1em;
+  border: 0.2rem solid #fff;
+  border-color: black;
+  border-radius: 30rem;
+}
 
-    .button:active {
-      filter: brightness(0.8);
-    }
+.android-large .text-wrapper {
+  /*position: absolute;
+  top: 12px;
+  left: 21px;*/
+  margin: 1em;
+  font-family: "Red Hat Mono-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.7rem;
+  letter-spacing: -0.48px;
+  line-height: normal;
+}
 
-    .button.zero {
-      /* grid-column: span 2; */
-      -webkit-user-select: none;
-      /* Safari */
-      user-select: none;
-      /* Standard syntax */
-    }
-
-    .button.equal {
-      /* grid-row: span 2; */
-      background-color: #4caf50;
-    }
-
-    .button.clear {
-      background-color: #f44336;
-    }
+#status {
+  font-size: 1.3rem;
+}
